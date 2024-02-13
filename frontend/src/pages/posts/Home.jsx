@@ -29,12 +29,7 @@ const Home = () => {
 
 			{loading && <i className="fa-solid fa-spinner animate-spin text-3xl text-center block text-indigo-600"></i>}
 
-			{posts &&
-				posts.map((post) => (
-					<div key={post._id}>
-						<Post post={post} />
-					</div>
-				))}
+			{posts && posts.length > 0 ? posts.map((post) => <div key={post?._id}>{post && <Post post={post} />}</div>) : <div>No posts available</div>}
 		</section>
 	);
 };

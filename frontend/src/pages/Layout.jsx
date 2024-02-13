@@ -27,7 +27,7 @@ const Layout = () => {
 
 	return (
 		<>
-			<header className="bg-indigo-500 text-white">
+			<header className="bg-indigo-500 text-white md:px-64">
 				<nav className="flex items-center justify-between p-4">
 					<Link
 						to="/"

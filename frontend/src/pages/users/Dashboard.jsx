@@ -61,17 +61,17 @@ const Dashboard = () => {
 				user.posts.map((post) => (
 					<div key={post._id}>
 						<Post post={post}>
-							<div className="flex items-center gap-2 mt-2">
+							<div className="flex items-center gap-2 mt-2 ">
 								<Link
 									state={post}
 									to="/update"
 									title="Update"
-									className="fa-solid fa-pen-to-square text-black"></Link>
+									className="fa-solid fa-pen-to-square text-indigo-600"></Link>
 
 								<button
 									onClick={() => handleDelete(post._id)}
 									title="Delete"
-									className="fa-solid fa-trash-can"></button>
+									className="fa-solid fa-trash-can text-indigo-600"></button>
 							</div>
 						</Post>
 					</div>

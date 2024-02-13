@@ -19,7 +19,7 @@ body {
 		@apply uppercase font-semibold;
 	}
 	.card {
-		@apply bg-white px-6 py-10 rounded-lg shadow-lg;
+		@apply bg-white px-6 py-10 rounded-lg shadow-lg md:max-w-[820px] mx-auto;
 	}
 	.title {
 		@apply font-bold mb-8 text-2xl;
